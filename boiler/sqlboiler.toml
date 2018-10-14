@@ -1,0 +1,5 @@
+[psql]
+dbname="sqlboiler_exp"
+user="postgres"
+pass="postgres"
+host="localhost"

@@ -3,7 +3,9 @@ package main
 import (
 	"log"
 
+	"github.com/dyxj/go-mod-sample/boiler/models"
 	"github.com/dyxj/go-mod-sample/noboiler"
+	_ "github.com/lib/pq"
 )
 
 func main() {
@@ -21,4 +23,12 @@ func main() {
 	}
 	log.Println(u)
 
+	users, err := models.Users().All(nil, DB)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Println(users)
+	for _, u := range users {
+		log.Println(u)
+	}
 }
