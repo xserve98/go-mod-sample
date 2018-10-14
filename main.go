@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/dyxj/go-mod-sample/boiler/models"
+	"github.com/dyxj/go-mod-sample/models"
 	"github.com/dyxj/go-mod-sample/noboiler"
 	_ "github.com/lib/pq"
 )
